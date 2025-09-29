@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Coleta Redondo com Validador
-// @version      2.5
+// @version      2.6
 // @description  Valida assinatura e roda coleta automática com painel flutuante
 // @author       Botzão
 // @match        https://*.tribalwars.com.br/*screen=place&mode=scavenge*

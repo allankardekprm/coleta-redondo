@@ -1,8 +1,8 @@
 (function () {
     "use strict";
 
-    // 🔗 URL do JSON de autorizados (substitua pelo seu)
-  const autorizadosRaw = "https://raw.githubusercontent.com/allankardekprm/coleta-redondo/main/autorizados.json";
+    // URL do JSON de autorizados (substitua pelo seu)
+    const urlAutorizados = "https://raw.githubusercontent.com/allankardekprm/autorizados-tribalwars/main/autorizados.json";
 
     const nomeJogador = (game_data && game_data.player && game_data.player.name)
         ? game_data.player.name.trim()
@@ -216,7 +216,7 @@
             painel.style.maxWidth = "220px";
             painel.style.lineHeight = "1.4em";
 
-            let html = `<strong>🛠️ Auto Coleta [v2.1]</strong><br>`;
+            let html = `<strong>🛠️ Auto Coleta [v2.2]</strong><br>`;
             for (const unit of unidades) {
                 html += `<label><input type="checkbox" id="check_${unit}" ${["spear","sword","axe","archer"].includes(unit)?"checked":""}> ${nomesUnidades[unit]}</label><br>`;
             }
@@ -225,7 +225,7 @@
             html += `<strong>Coletas:</strong> <span id="contador-coleta">0</span>`;
 
             painel.innerHTML = html;
-            document.body.appendChild(painel);
+            document.body.appendChild(painel); // ✅ appendChild recebe somente 1 Node
 
             document.getElementById("btnToggle").addEventListener("click", () => {
                 pausado = !pausado;
@@ -256,10 +256,8 @@
         });
 
         const reloadTime = randonTime(300000, 600000);
-        console.log(`🔄 Recarregando em ${Math.floor(reloadTime/1000)}s...`);
-        setTimeout(() => {
-            console.log("🔁 Recarregando página...");
-            location.reload(true);
-        }, reloadTime);
+        console.log(`🔄 Recarregando em ${Math.floor(reloadTime / 1000)} segundos...`);
+        setTimeout(() => { console.log("🔁 Recarregando página..."); location.reload(true); }, reloadTime);
     }
+
 })();

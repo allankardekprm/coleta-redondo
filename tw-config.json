@@ -1,0 +1,7 @@
+{
+  "version": "2.1.0",
+  "serverURL": "https://kanesha-undefinable-refugia.ngrok-free.dev",
+  "authToken": "K@031031",
+  "changelog": "Snipe Finder corrigido, simulador integrado, autorização por lista",
+  "_comentario": "Quando o ngrok mudar de URL, atualize apenas serverURL aqui. Todos os scripts atualizam automaticamente."
+}

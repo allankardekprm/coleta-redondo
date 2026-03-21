@@ -1,7 +1,7 @@
 {
-  "version": "2.1.0",
+  "version": "2.6.0",
   "serverURL": "https://kanesha-undefinable-refugia.ngrok-free.dev",
   "authToken": "K@031031",
-  "changelog": "Snipe Finder corrigido, simulador integrado, autorização por lista",
-  "_comentario": "Quando o ngrok mudar de URL, atualize apenas serverURL aqui. Todos os scripts atualizam automaticamente."
+  "changelog": "Fix crítico: botões não recarregam mais. Spam de nobre, copiar coords, badge Hoje/Amanhã",
+  "_update_url": "https://raw.githubusercontent.com/allankardekprm/coleta-redondo/main/central-defesa.user.js"
 }

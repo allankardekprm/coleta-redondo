@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Central de Defesa TW (Completo) CF
 // @namespace    tw-central-defesa-completo
-// @version      2.10.0
+// @version      2.12.0
 // @description  Painel: ataques, renomear, calculadora de defesa, snipe finder, minimapa, Discord, servidor
 // @author       Você
 // @match        *://*.tribalwars.com.br/game.php*
